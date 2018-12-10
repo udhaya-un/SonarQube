@@ -13,9 +13,9 @@
          
 # Docker Compose File:<br/>
  
-   version: '3.3'
-    services:
-     db:
+    version: '3.3'
+     services:
+      db:
        image: postgres
        restart: always
        volumes:
@@ -24,12 +24,12 @@
          POSTGRES_PASSWORD: sonar
          POSTGRES_USER: sonar
 
-     sonarqube:
-       image: sonarqube
-       restart: always
-       ports:
-         - 9000:9000
-         - 9092:9092
+       sonarqube:
+         image: sonarqube
+         restart: always
+         ports:
+           - 9000:9000
+           - 9092:9092
        volumes:
          - $PWD/sonar:/opt/sonarqube/data
        depends_on:
