@@ -64,7 +64,7 @@ Create the docker compose file as follow,
          
      http://localhost:9000
      
-![sonarqube](https://github.com/udhaya-un/SonarQube/blob/master/sonarqube.png?raw=true"sonarqube")
+![sonarqube](https://github.com/udhaya-un/SonarQube/blob/master/docs/sonarqube.png?raw=true"sonarqube")
      
          
         
