@@ -59,5 +59,9 @@ Create the docker compose file as follow,
          
   open the directory of this file in terminal and run the following command to up the containers
   **docker-compose up -d**
+  
+  To run the SonarQube enter the following url in browser
+         
+     http://localhost:9000
          
         
