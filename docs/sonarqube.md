@@ -1,5 +1,5 @@
 
-![Logo](https://github.com/udhaya-un/SonarQube/blob/master/GeppettoIcon.png?raw=true"Logo")
+![Logo](https://github.com/udhaya-un/SonarQube/blob/master/docs/GeppettoIcon.png?raw=true"Logo")
 
 # Docker With SonarQube<br/>
    In here we will see how to containerize sonarqube in Docker.
