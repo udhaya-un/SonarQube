@@ -13,10 +13,8 @@
          
 # Docker Compose File:<br/>
  
- version: '3.3'
-
-   services:
-
+   version: '3.3'
+    services:
      db:
        image: postgres
        restart: always
