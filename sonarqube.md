@@ -1,5 +1,5 @@
 
-![Logo](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/GeppettoIcon.png?raw=true"Logo")
+![Logo](https://github.com/udhaya-un/SonarQube/blob/master/GeppettoIcon.png?raw=true"Logo")
 
 # Docker With Nexus<br/>
    In here we will see how to containerize nexus in Docker.
