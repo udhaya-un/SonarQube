@@ -1,8 +1,8 @@
 
 ![Logo](https://github.com/udhaya-un/SonarQube/blob/master/GeppettoIcon.png?raw=true"Logo")
 
-# Docker With Nexus<br/>
-   In here we will see how to containerize nexus in Docker.
+# Docker With SonarQube<br/>
+   In here we will see how to containerize sonarqube in Docker.
    
 # Content
 1. [Prerequisites](#prerequisites)
