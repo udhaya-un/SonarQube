@@ -10,8 +10,11 @@
 
 # Prerequisites<br/> 
   [Install docker](https://docs.docker.com/install/)
+  [Install docker compose](https://docs.docker.com/compose/install/)
          
 # Docker Compose File:<br/>
+
+Create the docker compose file as follow,
  
     version: '3.3'
      services:
@@ -40,7 +43,7 @@
          SONARQUBE_JDBC_URL: jdbc:postgresql://db/sonar
          
          
-  open the directory of this file in terminal and run the following commang to up the containers
+  open the directory of this file in terminal and run the following command to up the containers
   **docker-compose up -d**
          
         
