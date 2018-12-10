@@ -16,31 +16,45 @@
 
 Create the docker compose file as follow,
  
-    version: '3.3'
-     services:
-      db:
-       image: postgres
-       restart: always
-       volumes:
-         - $PWD/db:/var/lib/postgresql/data
-       environment:
-         POSTGRES_PASSWORD: sonar
-         POSTGRES_USER: sonar
-
-       sonarqube:
-         image: sonarqube
-         restart: always
-         ports:
-           - 9000:9000
-           - 9092:9092
-       volumes:
-         - $PWD/sonar:/opt/sonarqube/data
-       depends_on:
+    version: "3"
+      services:
+      sonarqube:
+        image: sonarqube:6.7.1
+        restart: always
+        environment:
+          - SONARQUBE_JDBC_USERNAME=sonar
+          - SONARQUBE_JDBC_PASSWORD=v07IGCFCF83Z95NX
+          - SONARQUBE_JDBC_URL=jdbc:postgresql://db:5432/sonarqube
+        ports:
+          - "9000:9000"
+          - "9092:9092"
+        volumes:
+          - sonarqube_conf:/opt/sonarqube/conf
+          - sonarqube_data:/opt/sonarqube/data
+          - sonarqube_extensions:/opt/sonarqube/extensions
+          - sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
+        depends_on:
           - db
-       environment:
-         SONARQUBE_JDBC_USERNAME: sonar
-         SONARQUBE_JDBC_PASSWORD: sonar
-         SONARQUBE_JDBC_URL: jdbc:postgresql://db/sonar
+
+      db:
+        image: postgres:10.1
+        restart: always
+        environment:
+         - POSTGRES_USER=sonar
+         - POSTGRES_PASSWORD=v07IGCFCF83Z95NX
+         - POSTGRES_DB=sonarqube
+        volumes:
+          - sonarqube_db:/var/lib/postgresql
+          - postgresql_data:/var/lib/postgresql/data
+      volumes:
+        postgresql_data:
+        sonarqube_bundled-plugins:
+        sonarqube_conf:
+        sonarqube_data:
+        sonarqube_db:
+        sonarqube_extensions:
+
+
          
          
   open the directory of this file in terminal and run the following command to up the containers
