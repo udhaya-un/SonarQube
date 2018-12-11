@@ -41,7 +41,7 @@ To run the SonarQube enter the following url in browser
          
      http://localhost:9000/about
      
-![sonarqube](https://github.com/udhaya-un/SonarQube/blob/master/docs/sonarqube.png?raw=true"sonarqube")
+![sonarqube](https://github.com/udhaya-un/SonarQube/blob/master/docs/sonarqube1.png?raw=true"sonarqube")
 
 Click on the login
 
@@ -89,7 +89,7 @@ To run the SonarQube enter the following url in browser
          
      http://localhost:9000/about
      
-![sonarqube](https://github.com/udhaya-un/SonarQube/blob/master/docs/sonarqube.png?raw=true"sonarqube")
+![sonarqube](https://github.com/udhaya-un/SonarQube/blob/master/docs/sonarqube1.png?raw=true"sonarqube")
      
          
         
