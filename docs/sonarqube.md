@@ -14,7 +14,7 @@
   [Install docker](https://docs.docker.com/install/)<br/>
   [Install docker compose](https://docs.docker.com/compose/install/)
 
-# postgres Installation<br/>
+# Postgres Installation<br/>
 
 To create the docker container for the postgres run the following command. Make sure that the given port in the following command is not used already
        
