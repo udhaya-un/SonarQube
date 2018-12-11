@@ -6,7 +6,7 @@
    
 # Content
 1. [Prerequisites](#prerequisites)
-1. [postgres Installation](#Postgres-installation)
+1. [Postgres Installation](#Postgres-installation)
 1. [SonarQube Installation](#sonarqube-installation)
 1. [DockerCompose File](https://github.com/udhaya-un/SonarQube/blob/master/docs/docker-compose.yml)
 
