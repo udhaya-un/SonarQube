@@ -85,14 +85,15 @@ open the directory of this file in terminal and run the following command to up 
    
     docker-compose up -d
     
-  The volume of the container is created, to see the volume execute the following command
+  When up the docker compose fiel at that time volume of the container is created, to see the volume execute the following command
            
     docker exec -it [containername] bash 
-  Now, open the folder Which is mentioned under volumes for postgres there you can able to see the folder ***data*
+    
+  Now, open the folder Which is mentioned under volumes for postgres there you can able to see the folder ***data** which is the backup for container.
     
     cd var/lib/postgresql
     
-  Do the same for the sonarqube also to see the volumes.
+ Do the same for the sonarqube also to see the volumes.
   
 To run the SonarQube enter the following url in browser
          
