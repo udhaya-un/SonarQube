@@ -84,6 +84,15 @@ This is the another way to containerize the sonarqube with postgres. Download th
 open the directory of this file in terminal and run the following command to up the containers
    
     docker-compose up -d
+    
+  The volume of the container is created, to see the volume execute the following command
+           
+    docker exec -it [containername] bash 
+  Now, open the folder Which is mentioned under volumes for postgres there you can able to see the folder ***data*
+    
+    cd var/lib/postgresql
+    
+  Do the same for the sonarqube also to see the volumes.
   
 To run the SonarQube enter the following url in browser
          
